@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Checked Checkbox Value</title>
+	<script src="jQuery v3.6.0.js"></script>
+</head>
+<body>
+	<form>
+	<h3>Select your favourite Colors</h3>
+	<label><input type="checkbox" name="box" value="Violet">Violet</label><br>
+	<label><input type="checkbox" name="box" value="Indigo">Indigo</label><br>
+	<label><input type="checkbox" name="box" value="Blue">Blue</label><br>
+	<label><input type="checkbox" name="box" value="Green">Green</label><br>
+	<label><input type="checkbox" name="box" value="Yellow">Yellow</label><br>
+	<label><input type="checkbox" name="box" value="Orange">Orange</label><br>
+	<label><input type="checkbox" name="box" value="Red">Red</label><br><br>
+	<button>Get Selected Values</button>
+	</form>
+	
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+			debugger;
+			var arr=[];
+			$.each($("input[name='box']:checked"),function(){
+			debugger;
+			arr.push($(this).val());
+			});
+			alert("Your favourite Colors are: " + arr.join(","));
+				});
+			});
+	</script>
+</body>
+</html>

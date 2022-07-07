@@ -1,0 +1,40 @@
+<!DOCTYPE 	html>
+<html>
+<head>
+	<title>jQuery Syntax Practice</title>
+	<style>
+		#div1{
+			border-style:solid;
+			float: center;
+			background-color:  #57A845;
+		}
+		#div2{
+			border-style: solid;
+			float:center;
+			background-color:#0F2CB3;
+		}
+	</style>
+	<script src="jQuery v3.6.0.js"></script>
+</head>
+<body>
+	<div id="div1">
+		<h2>Heading1</h2>
+		<p>Paragraph1</p>
+	</div>
+	<div id="div2">
+		<h2>Heading2</h2>
+		<p>Paragraph2</p>
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			console.log("Welcome to Hell!");
+			var a=$("#div1").html();
+				console.log(a);
+				
+				var b=$("#div2").text();
+					console.log(b);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE 	html>
+<html>
+<head>
+	<title>jQuery Events Practice</title>
+	<style>
+		#box{
+			background:pink;
+			padding: 10px;
+			border: 1px solid red;
+		}
+	</style>
+	<script src="jQuery v3.6.0.js"></script>
+</head>
+<body>
+	<h1>Let's Practice jQuery Events</h1>
+	
+	<div id="box" class="text">
+	<h2>Text box</h2>
+	<p>Paragraph</p>
+	</div>
+	<script>
+		$(document).ready(function(){
+		
+			$("#box").click(function(){
+			$("#box").css("background-color","green");
+			var a= $("#box").html();
+			console.log(a);
+			});
+			
+			$("#box").dblclick(function(){
+				$("#box").css("color","blue");
+			});
+			
+				$("#box").contextmenu(function(){
+				$("#box").css("background-color","aquamarine");
+			});
+			
+				$("#box").mouseenter(function(){
+				$("#box").css("background-color","tan");
+			});
+			
+			$("#box").mouseleave(function(){
+				$("#box").css("background-color","red");
+			});
+			
+		//	$("body").keypress(function(){
+			//	$(this).css("background-color","yellow ");
+			//});
+			
+			$("body").keyup(function(){
+				$(this).css("background-color","brown");
+			});
+			
+			$("body").keydown(function(){
+				$(this).css("background-color","violet");
+			});
+		});
+	</script>
+</body>
+</html>

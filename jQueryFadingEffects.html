@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jQuery v3.6.0.js"></script>
+	<script>
+		$(document).ready(function(){
+		
+			$("button").click(function(){
+				$("#div1").fadeIn();
+				$("#div2").fadeIn("slow");
+				$("#div3").fadeIn(3000);
+				});
+			$("#fadeout").click(function(){
+				$("#div4").fadeOut();
+				$("#div5").fadeOut("slow");
+				$("#div6").fadeOut(3000);
+				});
+			$
+			
+			});
+	</script>
+</head>
+<body>
+	<h1><b> Fading methods with example using different parameters </b></h1>
+	
+	<!--<p> 1. fadeIn() method  </p>-->
+	<button> Click to fadeIn boxes </button><br><br>
+	<div id="div1" style="width:70px; height:70px; display:none; background-color:orange;" ></div><br>
+	<div id="div2" style="width:70px; height:70px;display:none; background-color:pink;" ></div><br>
+	<div id="div3" style="width:70px; height:70px; display:none; background-color:green;" ></div><br><br>
+	
+	<!--<p> 2. fadeOut() method</p><br>-->
+	<input type="button" id="fadeout"  value="Click to fadeOut boxes"/><br><br>
+	<div id="div4" style="width:70px; height:70px; background-color:orange;" ></div><br>
+	<div id="div5" style="width:70px; height:70px; background-color:pink;" ></div><br>
+	<div id="div6" style="width:70px; height:70px; background-color:green;" ></div><br><br>
+	
+	<!--<p> 3. fadeToggle() method</p>-->
+	<button> Click to fadeToggle boxes</button><br><br>
+	<div id="div7" style="width:70px; height:70px; background-color:orange;"></div><br>
+	<div id="div8" style="width:70px; height:70px; background-color:pink;"></div><br>
+	<div id="div9" style="width:70px; height:70px; background-color:green;"></div><br>
+</body>
+</html>
